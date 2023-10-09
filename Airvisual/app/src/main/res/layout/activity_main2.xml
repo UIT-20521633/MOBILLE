@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgregis"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:id="@+id/buttonarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="#dbe5dd"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/otp"
+        android:layout_below="@+id/buttonarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="OTP Verification"
+        android:gravity="left"
+        android:textColor="#4b784e"
+        android:textSize="31.5sp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/amethysta"
+            android:gravity="left"
+            android:text="Enter the code sent to"
+            android:textColor="#9E9999"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/amethysta"
+            android:gravity="left"
+            android:textColor="#9E9999"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/amethysta"
+            android:text="Verification code"
+            android:gravity="left"
+            android:textColor="#9E9999"
+            android:textSize="22sp" />
+        <EditText
+            android:id="@+id/code"
+            android:layout_below="@+id/verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/lexend"
+            android:hint="Verification code"
+            android:padding="15dp"
+            android:textColor="#4b784e"
+            android:textColorHint="#4b784e"
+            android:textSize="22sp"
+            android:background="@drawable/custom_edittext_button"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Didn,t recieve code? "
+                android:textColor="#9E9999"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Re-send"
+                android:textColor="#4b784e"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="20dp"
+            android:text="VERIFY"
+            android:layout_below="@+id/layout_resend"
+            android:backgroundTint="#4b784e"
+            android:padding="13dp"
+            />
+        <TextView
+            android:id="@+id/Change_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="CHANGE EMAIL"
+            android:textColor="#4b784e"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
